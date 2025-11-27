@@ -145,6 +145,20 @@ text-align: center;
   object-fit: fill;
 }
 
+.proj-desc .title {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+}
+
+.title img {
+  width: 20px;
+  height: auto;
+}
+
+.title i {
+  font-size: 1.8rem;
+}
+
 .proj-desc {
   margin: 5px 10px;
   font-size: 1.4rem;
@@ -241,9 +255,45 @@ footer .image img {
     bottom: auto;
     left: calc(anchor(right) - 15px);
     top: calc(anchor(top) - 50px);
+    font-size: 4.8rem;
   }
 
   footer .contact{
     display:flex;
   }
+
+  footer .icon-set {
+  align-self: left;
+  }
+}
+
+@media (min-width: 1000px) {
+  .float-trick {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header h1 {
+    left: auto;
+    top: auto;
+    bottom: calc(anchor(bottom) + 5px);
+  }
+
+  header img {
+    margin: 0;
+  }
+
+  header {
+    max-width: 1000px;
+  }
+
+  .about-me {
+    padding-top: 5px;
+    margin: 0;
+  }
+
+  .about-me h2 {
+    padding: 1em;
+  }
+
 }
